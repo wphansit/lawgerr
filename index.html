@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ตรวจสัญญาด้วย AI — LawGerr Contract Review</title>
-<meta name="description" content="สแกนความเสี่ยงในสัญญา เทียบคำพิพากษาศาลฎีกา 31,000+ คดี ตรวจเสร็จภายใน 24 ชั่วโมง">
+<meta name="description" content="สแกนความเสี่ยงในสัญญา เทียบคำพิพากษาศาลฎีกา 31,000+ คดี ตรวจเสร็จและส่งผลทางอีเมลภายใน 24 ชั่วโมง">
 <style>
   :root { --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --acc:#0d9488; --warn:#b45309; --bg:#f8fafc; }
   * { box-sizing:border-box; }
@@ -29,22 +29,22 @@
   .tag { display:inline-block; font-size:11px; font-weight:700; padding:3px 8px; border-radius:4px; color:#fff; }
   .high { background:#dc2626; } .mid { background:#d97706; } .low { background:#16a34a; }
   .warnbox { background:#fffbeb; border-left:4px solid var(--warn); padding:16px; font-size:13px; color:#78350f; border-radius:6px; }
+  .email-box { background:#fff; border:2px dashed var(--acc); border-radius:10px; padding:24px; text-align:center; margin-top:16px; }
+  .email-addr { font-size:20px; font-weight:700; color:var(--acc); font-family:monospace; word-break:break-all; }
   .cta { text-align:center; padding:44px 0 60px; }
   .btn { display:inline-block; background:var(--acc); color:#fff; text-decoration:none; padding:14px 36px; border-radius:8px; font-size:17px; font-weight:600; }
-  .qr { text-align:center; margin-top:20px; }
-  .qr img { width:190px; height:190px; }
   .muted { color:var(--mut); font-size:13px; }
   footer { text-align:center; padding:28px 0 40px; color:var(--mut); font-size:12px; }
-  @media(max-width:560px){ .grid{grid-template-columns:1fr;} header h1{font-size:23px;} }
+  @media(max-width:560px){ .grid{grid-template-columns:1fr;} header h1{font-size:23px;} .email-addr{font-size:17px;} }
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap">
-    <div class="badge">AI CONTRACT AUDIT · THAILAND</div>
+    <div class="badge">AI CONTRACT AUDIT · EMAIL CONCIERGE</div>
     <h1>สัญญาที่คุณกำลังจะเซ็น<br>มีจุดเสียเปรียบซ่อนอยู่กี่ข้อ?</h1>
-    <p>สแกนความเสี่ยงเทียบคำพิพากษาศาลฎีกา 31,605 คดี · รายงานเสร็จใน 24 ชั่วโมง</p>
+    <p>สแกนความเสี่ยงเทียบคำพิพากษาศาลฎีกา 31,605 คดี · ส่งสัญญาทางอีเมล รับผลภายใน 24 ชม.</p>
   </div>
 </header>
 
@@ -63,7 +63,7 @@
 
 <section>
   <div class="wrap">
-    <h2>แพ็กเกจ</h2>
+    <h2>แพ็กเกจค่าบริการ</h2>
     <div class="grid">
       <div class="card">
         <h3>คัดกรองเบื้องต้น</h3>
@@ -71,7 +71,7 @@
         <ul>
           <li>สแกนจุดเสี่ยงทั้งหมด</li>
           <li>รายงาน HTML อ่านง่าย</li>
-          <li>ส่งภายใน 24 ชม.</li>
+          <li>ส่งผลกลับทางอีเมลใน 24 ชม.</li>
         </ul>
       </div>
       <div class="card" style="border-color:var(--acc); border-width:2px">
@@ -82,7 +82,7 @@
           <li>เทียบคำพิพากษาศาลฎีกาที่เกี่ยวข้อง</li>
           <li>ข้อเสนอแก้ไขสัญญารายข้อ</li>
           <li>ระบุข้อสัญญาที่ขาดหาย</li>
-          <li>ส่งภายใน 24 ชม.</li>
+          <li>ส่งผลกลับทางอีเมลใน 24 ชม.</li>
         </ul>
       </div>
     </div>
@@ -91,32 +91,35 @@
 
 <section>
   <div class="wrap">
-    <h2>ขั้นตอนใช้งาน</h2>
+    <h2>ขั้นตอนการส่งตรวจ (ทางอีเมล 100%)</h2>
     <ol class="steps">
-      <li><b>ส่งสัญญา</b><br><span class="muted">อัปโหลด PDF ผ่านแบบฟอร์ม (ลบเลขบัญชี/ข้อมูลอ่อนไหวก่อนส่งได้)</span></li>
-      <li><b>ชำระเงิน</b><br><span class="muted">PromptPay หรือ Bitcoin — สแกน QR</span></li>
-      <li><b>รับรายงาน</b><br><span class="muted">ไฟล์ ZIP: รายงาน HTML + ใบเสร็จ + ข้อจำกัดความรับผิด</span></li>
-      <li><b>ปรึกษาทนาย</b><br><span class="muted">นำรายงานไปคุยกับทนายของคุณเพื่อยืนยันก่อนเซ็นจริง</span></li>
+      <li>
+        <b>ส่งไฟล์สัญญา (PDF) ทางอีเมล</b><br>
+        <span class="muted">แนบไฟล์ PDF ส่งมาที่อีเมลด้านล่าง พร้อมระบุชื่อแพ็กเกจ (สามารถลบ/ขีดฆ่าเลขบัญชีหรือชื่อส่วนบุคคลออกก่อนได้)</span>
+      </li>
+      <li>
+        <b>ระบบตรวจสอบและจัดทำรายงาน</b><br>
+        <span class="muted">ระบบประมวลผลด้วย AI 3 มิติ และสืบค้นแนวคำพิพากษาศาลฎีกา 31,605 คดี</span>
+      </li>
+      <li>
+        <b>รับรายงานและใบแจ้งหนี้พร้อม QR Code ทางอีเมล</b><br>
+        <span class="muted">คุณจะได้รับไฟล์ ZIP สรุปผล + ใบเสร็จ/ใบแจ้งหนี้พร้อม QR Code สำหรับสแกนจ่ายเงิน (PromptPay / Bitcoin)</span>
+      </li>
+      <li>
+        <b>นำรายงานไปปรึกษาทนายความ</b><br>
+        <span class="muted">ใช้รายงานเป็นข้อมูลตั้งต้นในการคุยกับทนายความของคุณก่อนลงนามจริง</span>
+      </li>
     </ol>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>ช่องทางส่งสัญญา</h2>
-    <p><b>อีเมล:</b> <span style="font-family:monospace">lawgerr.review@gmail.com</span></p>
-    <p class="muted">ส่งไฟล์ PDF แนบมาพร้อมชื่อที่ใช้ติดต่อกลับ ระบบจะตอบกลับภายใน 24 ชั่วโมง</p>
-    <p style="margin-top:18px"><b>LINE:</b> <span style="font-family:monospace">@lawgerr</span> (เพิ่มเพื่อนแล้วส่งไฟล์ได้เลย)</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>ชำระเงิน</h2>
-    <div class="qr">
-      <div class="muted" style="margin-bottom:6px">พร้อมเพย์ 080-045-6013</div>
-      <img src="qr_promptpay_static.png" alt="PromptPay QR">
-      <div class="muted" style="margin-top:6px">สแกนแล้วระบุยอดตามแพ็กเกจ</div>
+    <h2>ส่งสัญญาของคุณได้ที่นี่</h2>
+    <div class="email-box">
+      <div class="muted" style="margin-bottom:8px">อีเมลสำหรับรับตรวจสัญญา (คลิกเพื่อเปิดโปรแกรมส่งอีเมล):</div>
+      <a class="email-addr" href="mailto:wphansit@gmail.com?subject=%5BLawGerr%5D%20%E0%B8%82%E0%B8%AD%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%B1%E0%B8%8Parse%E0%B8%8D%E0%B8%B2&body=%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%5C%E0%B8%95%E0%B9%88%E0%B8%AD%3A%0A%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%3A%20%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%A5%E0%B8%B6%E0%B8%81%20(990%20%E0%B8%9A%E0%B8%B2%E0%B8%97)%0A%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%A7%E0%B8%A5%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9%3A%0A%0A(***%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%99%E0%B8%9A%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%20PDF%20%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B8%B0%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A***)">wphansit@gmail.com</a>
+      <div class="muted" style="margin-top:10px">ระบุชื่อและแนบไฟล์ PDF สัญญา — ระบบจะตอบกลับพร้อมผลตรวจและใบแจ้งหนี้ภายใน 24 ชม.</div>
     </div>
   </div>
 </section>
@@ -135,11 +138,7 @@
 </section>
 
 <div class="cta">
-  <a class="btn" href="mailto:lawgerr.review@gmail.com?subject=ขอตรวจสัญญา">ส่งสัญญาให้ตรวจ</a>
-  <div class="qr" style="margin-top:26px">
-    <img src="qr_promptpay_static.png" alt="PromptPay">
-    <div class="muted">พร้อมเพย์ 080-045-6013 · LawGerr</div>
-  </div>
+  <a class="btn" href="mailto:wphansit@gmail.com?subject=%5BLawGerr%5D%20%E0%B8%82%E0%B8%AD%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%B1%E0%B8%8Parse%E0%B8%8D%E0%B8%B2">ส่งสัญญาทางอีเมล (wphansit@gmail.com)</a>
 </div>
 
 <footer>
