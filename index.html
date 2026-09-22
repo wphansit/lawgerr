@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ตรวจสัญญาด้วย AI — LawGerr Contract Review</title>
+<meta name="description" content="สแกนความเสี่ยงในสัญญา เทียบคำพิพากษาศาลฎีกา 31,000+ คดี ตรวจเสร็จภายใน 24 ชั่วโมง">
+<style>
+  :root { --ink:#0f172a; --mut:#64748b; --line:#e2e8f0; --acc:#0d9488; --warn:#b45309; --bg:#f8fafc; }
+  * { box-sizing:border-box; }
+  body { font-family:'Sarabun','Thonburi','Helvetica Neue',sans-serif; margin:0; color:var(--ink); background:var(--bg); line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 20px; }
+  header { background:linear-gradient(135deg,#0f172a,#134e4a); color:#fff; padding:56px 0 44px; }
+  header h1 { font-size:30px; margin:0 0 10px; line-height:1.35; }
+  header p { margin:0; color:#94a3b8; font-size:16px; }
+  .badge { display:inline-block; background:#0d9488; color:#fff; font-size:12px; padding:4px 12px; border-radius:99px; margin-bottom:16px; letter-spacing:.5px; }
+  section { padding:40px 0; border-bottom:1px solid var(--line); }
+  h2 { font-size:20px; margin:0 0 18px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; }
+  .card h3 { margin:0 0 8px; font-size:16px; }
+  .card .price { font-size:26px; font-weight:700; color:var(--acc); }
+  .card ul { margin:12px 0 0; padding-left:18px; font-size:14px; color:#334155; }
+  .card li { margin-bottom:6px; }
+  .steps { counter-reset:s; list-style:none; padding:0; }
+  .steps li { counter-increment:s; position:relative; padding-left:44px; margin-bottom:18px; }
+  .steps li::before { content:counter(s); position:absolute; left:0; top:0; width:30px; height:30px; background:var(--acc); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; }
+  .sample { background:#fff; border:1px solid var(--line); border-radius:10px; padding:20px; font-size:14px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:3px 8px; border-radius:4px; color:#fff; }
+  .high { background:#dc2626; } .mid { background:#d97706; } .low { background:#16a34a; }
+  .warnbox { background:#fffbeb; border-left:4px solid var(--warn); padding:16px; font-size:13px; color:#78350f; border-radius:6px; }
+  .cta { text-align:center; padding:44px 0 60px; }
+  .btn { display:inline-block; background:var(--acc); color:#fff; text-decoration:none; padding:14px 36px; border-radius:8px; font-size:17px; font-weight:600; }
+  .qr { text-align:center; margin-top:20px; }
+  .qr img { width:190px; height:190px; }
+  .muted { color:var(--mut); font-size:13px; }
+  footer { text-align:center; padding:28px 0 40px; color:var(--mut); font-size:12px; }
+  @media(max-width:560px){ .grid{grid-template-columns:1fr;} header h1{font-size:23px;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="badge">AI CONTRACT AUDIT · THAILAND</div>
+    <h1>สัญญาที่คุณกำลังจะเซ็น<br>มีจุดเสียเปรียบซ่อนอยู่กี่ข้อ?</h1>
+    <p>สแกนความเสี่ยงเทียบคำพิพากษาศาลฎีกา 31,605 คดี · รายงานเสร็จใน 24 ชั่วโมง</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>ตัวอย่างจริงจากระบบ</h2>
+    <div class="sample">
+      <div class="muted" style="margin-bottom:12px">สัญญาจ้างบริหารจัดการนิติบุคคลอาคารชุด · ระดับความเสี่ยงรวม <b style="color:#d97706">MEDIUM</b></div>
+      <p style="margin:0 0 10px"><span class="tag high">HIGH</span> <b>ข้อ 2 (วรรคท้าย)</b><br>สัญญาต่ออายุอัตโนมัติคราวละ 2 ปี หากไม่ทำสัญญาใหม่ — ผู้ว่าจ้างอาจผูกพันโดยไม่ตั้งใจ</p>
+      <p style="margin:0 0 10px"><span class="tag mid">MEDIUM</span> <b>ข้อ 7</b><br>ผู้รับจ้างรับผิดชอบเฉพาะความเสียหายโดยตรง ยกเว้นความเสียหายจากการเสื่อมสภาพ — อาจตีความแคบเกินไป</p>
+      <p style="margin:0"><span class="tag low">LOW</span> <b>ข้อ 12</b><br>ดอกเบี้ยผิดนัด 15% ต่อปี — ควรตรวจสอบเพดานตามกฎหมาย</p>
+      <div class="muted" style="margin-top:14px">+ พบข้อสัญญาที่ขาดหายอีก 4 รายการ (ความลับ / ประกันภัย / อนุญาโตตุลาการ / ตรวจสอบบัญชี)</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>แพ็กเกจ</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>คัดกรองเบื้องต้น</h3>
+        <div class="price">490 ฿</div>
+        <ul>
+          <li>สแกนจุดเสี่ยงทั้งหมด</li>
+          <li>รายงาน HTML อ่านง่าย</li>
+          <li>ส่งภายใน 24 ชม.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-color:var(--acc); border-width:2px">
+        <h3>ตรวจสอบเชิงลึก <span class="badge" style="margin:0;font-size:10px">แนะนำ</span></h3>
+        <div class="price">990 ฿</div>
+        <ul>
+          <li>วิเคราะห์ 3 ด้าน: แพ่ง / ภาษี / แรงงาน</li>
+          <li>เทียบคำพิพากษาศาลฎีกาที่เกี่ยวข้อง</li>
+          <li>ข้อเสนอแก้ไขสัญญารายข้อ</li>
+          <li>ระบุข้อสัญญาที่ขาดหาย</li>
+          <li>ส่งภายใน 24 ชม.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>ขั้นตอนใช้งาน</h2>
+    <ol class="steps">
+      <li><b>ส่งสัญญา</b><br><span class="muted">อัปโหลด PDF ผ่านแบบฟอร์ม (ลบเลขบัญชี/ข้อมูลอ่อนไหวก่อนส่งได้)</span></li>
+      <li><b>ชำระเงิน</b><br><span class="muted">PromptPay หรือ Bitcoin — สแกน QR</span></li>
+      <li><b>รับรายงาน</b><br><span class="muted">ไฟล์ ZIP: รายงาน HTML + ใบเสร็จ + ข้อจำกัดความรับผิด</span></li>
+      <li><b>ปรึกษาทนาย</b><br><span class="muted">นำรายงานไปคุยกับทนายของคุณเพื่อยืนยันก่อนเซ็นจริง</span></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>ช่องทางส่งสัญญา</h2>
+    <p><b>อีเมล:</b> <span style="font-family:monospace">lawgerr.review@gmail.com</span></p>
+    <p class="muted">ส่งไฟล์ PDF แนบมาพร้อมชื่อที่ใช้ติดต่อกลับ ระบบจะตอบกลับภายใน 24 ชั่วโมง</p>
+    <p style="margin-top:18px"><b>LINE:</b> <span style="font-family:monospace">@lawgerr</span> (เพิ่มเพื่อนแล้วส่งไฟล์ได้เลย)</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>ชำระเงิน</h2>
+    <div class="qr">
+      <div class="muted" style="margin-bottom:6px">พร้อมเพย์ 080-045-6013</div>
+      <img src="qr_promptpay_static.png" alt="PromptPay QR">
+      <div class="muted" style="margin-top:6px">สแกนแล้วระบุยอดตามแพ็กเกจ</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="warnbox">
+      <b>ข้อจำกัดความรับผิดชอบ</b><br>
+      บริการนี้ใช้ระบบปัญญาประดิษฐ์ (AI) เป็นเครื่องมือคัดกรองเบื้องต้นเท่านั้น
+      <b>ไม่ใช่คำแนะนำทางกฎหมาย</b> และไม่ก่อให้เกิดความสัมพันธ์ทนายความ-ลูกความ
+      ตามพระราชบัญญัติทนายความ พ.ศ. 2528 ผู้ใช้ต้องนำผลการวิเคราะห์ไปปรึกษาทนายความ
+      ที่มีใบอนุญาตก่อนตัดสินใจลงนามหรือดำเนินการทางกฎหมายใด ๆ
+      เอกสารสัญญาที่ส่งเข้าสู่ระบบจะถูกลบหลังส่งงานและไม่ถูกเผยแพร่ต่อบุคคลภายนอก
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <a class="btn" href="mailto:lawgerr.review@gmail.com?subject=ขอตรวจสัญญา">ส่งสัญญาให้ตรวจ</a>
+  <div class="qr" style="margin-top:26px">
+    <img src="qr_promptpay_static.png" alt="PromptPay">
+    <div class="muted">พร้อมเพย์ 080-045-6013 · LawGerr</div>
+  </div>
+</div>
+
+<footer>
+  LawGerr Contract Review · AI-powered preliminary contract audit<br>
+  รายงานนี้ไม่ใช่คำแนะนำทางกฎหมาย — โปรดปรึกษาทนายความที่มีใบอนุญาต
+</footer>
+
+</body>
+</html>
